@@ -5,21 +5,21 @@
 class Crossagent < Formula
   desc "Cross-model AI agent orchestrator with browser-based Web UI"
   homepage "https://github.com/grikwong/crossagent"
-  version "1.3.0"
+  version "1.4.0"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grikwong/crossagent/releases/download/v1.3.0/crossagent_darwin_amd64.tar.gz"
-      sha256 "e3b79bed0a239a67a82ee320e3950943b4cbb277c532bf6dbba81f7475a3bcf0"
+      url "https://github.com/grikwong/crossagent/releases/download/v1.4.0/crossagent_darwin_amd64.tar.gz"
+      sha256 "754cfa8cfc9fbfa923fc7f24e68887453ca9e49075da2ff5a409decefb11513b"
 
       define_method(:install) do
         bin.install "crossagent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grikwong/crossagent/releases/download/v1.3.0/crossagent_darwin_arm64.tar.gz"
-      sha256 "a388b25ec342e4714d008ffb36c5540161908444121088c7317a32bd173fbec1"
+      url "https://github.com/grikwong/crossagent/releases/download/v1.4.0/crossagent_darwin_arm64.tar.gz"
+      sha256 "833f29656e27c2e79fd5b88ede6f1b0bb0d99b10c9abfa1f47a8709a15a1c8dc"
 
       define_method(:install) do
         bin.install "crossagent"
@@ -29,15 +29,15 @@ class Crossagent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grikwong/crossagent/releases/download/v1.3.0/crossagent_linux_amd64.tar.gz"
-      sha256 "6df2599da01d568044da22a39e359d9b173c06745e294e0cf13d91e8b7301abc"
+      url "https://github.com/grikwong/crossagent/releases/download/v1.4.0/crossagent_linux_amd64.tar.gz"
+      sha256 "154103a5f4b8b4f483590042f9cd6a5a1e31cdaa4b4aa81002bf24c938b2cc84"
       define_method(:install) do
         bin.install "crossagent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grikwong/crossagent/releases/download/v1.3.0/crossagent_linux_arm64.tar.gz"
-      sha256 "aad1ca27d8724ff9ef09dbe3d6d4eb28ff9b6c4302ad773c53d155b073dddd3b"
+      url "https://github.com/grikwong/crossagent/releases/download/v1.4.0/crossagent_linux_arm64.tar.gz"
+      sha256 "3fcb6d3c381857d2cfe0292bceea4ba2fe118d7260e75d07bab0f7afc9725e45"
       define_method(:install) do
         bin.install "crossagent"
       end
